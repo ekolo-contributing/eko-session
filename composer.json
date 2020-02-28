@@ -3,7 +3,9 @@
     "description": "Module PHP permettant de g\u0000rer les sessions",
     "type": "library",
     "require": {
-        "ekolo/eko-magic": "^0.3.0"
+        "php": ">=7.0",
+        "ekolo/eko-magic": "^0.3.0",
+        "ekolo/eko-helpers": "^0.3.1"
     },
     "license": "MIT",
     "authors": [
@@ -11,5 +13,10 @@
             "name": "Don de Dieu BOLENGE",
             "email": "dondedieubolenge@gmail.com"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "Ekolo\\Component\\EkoSession\\": "src/"
+        }
+    }
 }
