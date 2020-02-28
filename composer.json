@@ -1,0 +1,15 @@
+{
+    "name": "ekolo/eko-session",
+    "description": "Module PHP permettant de g\u0000rer les sessions",
+    "type": "library",
+    "require": {
+        "ekolo/eko-magic": "^0.3.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Don de Dieu BOLENGE",
+            "email": "dondedieubolenge@gmail.com"
+        }
+    ]
+}
