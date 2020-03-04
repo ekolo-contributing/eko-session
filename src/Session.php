@@ -64,4 +64,16 @@
             parent::remove($key);
             unset($_SESSION[$key]);
         }
+
+        /**
+         * Retourne la variable dans la session
+         * @param string $key La clé de la variable à retoruner
+         * @return void
+         */
+        public function get($key)
+        {
+            parent::get($key);
+
+            return $_SESSION[$key];
+        }
     }
