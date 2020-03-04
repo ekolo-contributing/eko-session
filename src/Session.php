@@ -70,9 +70,9 @@
          * @param string $key La clé de la variable à retoruner
          * @return void
          */
-        public function get($key)
+        public function get($key, $default = null)
         {
-            parent::get($key);
+            parent::get($key, $default);
 
             return $_SESSION[$key];
         }
