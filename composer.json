@@ -4,7 +4,7 @@
     "type": "library",
     "require": {
         "php": ">=7.0",
-        "ekolo/eko-magic": "^0.3.0",
+        "ekolo/eko-magic": "^0.3.1",
         "ekolo/eko-helpers": "^0.3.4"
     },
     "license": "MIT",
