@@ -73,7 +73,47 @@
         public function get($key, $default = null)
         {
             parent::get($key, $default);
+            return $this->has($key) ? $_SESSION[$key] : null;
+        }
 
-            return $_SESSION[$key];
+        /**
+         * Renvoi les clés des paramètres
+         * @return array
+         */
+        public function keys()
+        {
+            parent::keys();
+            return array_keys($_SESSION);
+        }
+
+        /**
+         * Vérifie si le parameter existe
+         * @param string $key
+         * @return bool
+         */
+        public function has($key)
+        {
+            parent::has($key);
+            return array_key_exists($key, $_SESSION);
+        }
+
+        /**
+         * Retourne Le nombre de parameters
+         * @return int
+         */
+        public function count()
+        {
+            parent::count();
+            return \count($_SESSION);
+        }
+
+        /**
+         * Retourne les variables
+         * @return array
+         */
+        public function all()
+        {
+            parent::all();
+            return $_SESSION;
         }
     }
